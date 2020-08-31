@@ -1,0 +1,30 @@
+{
+	"variables": [],
+	"info": {
+		"name": "generateUpdateStatement",
+		"_postman_id": "fabce4b8-f748-42c4-f66c-95ce96b71964",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Simple update statement",
+			"request": {
+				"url": "localhost:3000/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"originalDocument\": {\"_id\":1,\"name\":\"Johnny Content Creator\",\"posts\":[{\"_id\":2,\"value\":\"one\",\"mentions\":[]},{\"_id\":3,\"value\":\"two\",\"mentions\":[{\"_id\":5,\"text\":\"apple\"},{\"_id\":6,\"text\":\"orange\"}]},{\"_id\":4,\"value\":\"three\",\"mentions\":[]}]},\n\t\"mutations\": {\"posts\":[{\"_id\":2,\"value\":\"too\"},{\"_id\":4,\"value\":\"roo\"}]}\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

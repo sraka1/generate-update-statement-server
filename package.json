@@ -1,0 +1,18 @@
+{
+  "name": "@sraka1/generate-update-statement-server",
+  "version": "0.0.1",
+  "main": "./src/index.js",
+  "author": "Jakob Murko <hi@jakko.me>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node -r esm src/server.js"
+  },
+  "dependencies": {
+    "@sraka1/generate-update-statement": "github:sraka1/generate-update-statement",
+    "esm": "^3.2.25",
+    "fastify": "^3.3.0"
+  },
+  "devDependencies": {
+    "standard": "^14.3.4"
+  }
+}
